@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>薛翊均 Winnie｜履歷 CV</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet">
+<style>
+@page{size:A4;margin:0}
+:root{--paper:#f7f3ea;--ink:#1a1814;--mute:#6e675b;--line:#d9d1c1;--gold:#a8844a;
+--serif:"Noto Serif TC","Noto Serif CJK TC",serif;--sans:"Noto Sans TC","Noto Sans CJK TC",sans-serif;--mono:"DM Mono","Noto Sans Mono CJK TC",monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:#ddd6c8}
+body{font:400 9.2pt/1.6 var(--sans);color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+a{color:inherit;text-decoration:none}
+.page{width:210mm;height:297mm;margin:0 auto;background:var(--paper);padding:13mm 15mm 12mm;position:relative;overflow:hidden;display:flex;flex-direction:column}
+@media screen{.page{margin:24px auto;box-shadow:0 10px 30px rgba(0,0,0,.15)}}
+@media print{html{background:none}.page{break-after:page}.page:last-child{break-after:auto}}
+.label{font:500 7pt/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.25}
+.orn{position:absolute;top:-30mm;right:-30mm;width:100mm;height:100mm;color:var(--gold);opacity:.35;pointer-events:none}
+.pno{position:absolute;bottom:5mm;right:15mm;font:500 7pt var(--mono);color:var(--mute);letter-spacing:.12em}
+/* header */
+.hd{position:relative;z-index:1;display:grid;grid-template-columns:1fr 60mm;gap:8mm;align-items:end;padding-bottom:6mm;border-bottom:1.2pt solid var(--ink)}
+.hd h1{font-size:30pt;margin:3mm 0 1mm}.hd h1 em{font-style:normal;color:var(--gold);font-size:.62em;margin-left:2mm}
+.role{font:500 10.5pt var(--sans)}
+.lead{color:var(--mute);margin-top:2.5mm;max-width:118mm}
+.ct{display:grid;gap:1.6mm;font-size:8.4pt}
+.ct div{display:grid;grid-template-columns:13mm 1fr;gap:2mm;white-space:nowrap}
+.ct dt{font:500 6.8pt/1.9 var(--mono);color:var(--mute);letter-spacing:.1em}
+.ph{width:24mm;height:24mm;border-radius:50%;overflow:hidden;margin-bottom:3mm;border:.8pt solid var(--line)}
+.ph img{width:100%;height:100%;object-fit:cover;object-position:52% 30%}
+/* body */
+.cols{display:grid;grid-template-columns:62mm 1fr;gap:9mm;margin:5mm 0 7mm}
+.nowh{margin-top:auto;margin-bottom:3mm;padding-bottom:2mm}.nowh h2{font-size:13pt}
+.blk+.blk{margin-top:5mm}
+.blk>.label{display:block;padding-bottom:2mm;margin-bottom:3mm;border-bottom:.6pt solid var(--line)}
+.caps div+div{margin-top:2mm}
+.caps h4{font:700 9pt var(--sans)}
+.caps p{color:var(--mute);font-size:8.2pt;line-height:1.5}
+.tags{display:flex;flex-wrap:wrap;gap:1.5mm}
+.tags span{font-size:7.4pt;padding:.6mm 2.4mm;border:.6pt solid var(--line);border-radius:10mm;color:var(--mute)}
+.tl{list-style:none}
+.tl li{display:grid;grid-template-columns:21mm 1fr;gap:3mm;padding:1.8mm 0;border-bottom:.6pt dashed var(--line)}
+.tl li:first-child{padding-top:0}
+.tl time{font:500 7.6pt/1.9 var(--mono);color:var(--gold)}
+.tl h3{font-size:10pt}.tl h3 small{font:500 8.2pt var(--sans);color:var(--mute);margin-left:2mm}
+.tl p{font-size:8.2pt;color:var(--mute);margin-top:.6mm}
+.quote{font:500 10.5pt/1.7 var(--serif);border-left:2pt solid var(--gold);padding-left:4mm}
+/* page 2 */
+.sh{display:flex;justify-content:space-between;align-items:end;padding-bottom:3mm;border-bottom:1.2pt solid var(--ink);margin-bottom:6mm}
+.sh h2{font-size:17pt;margin-top:2mm}.sh p{font-size:8pt;color:var(--mute)}
+.case{display:grid;grid-template-columns:92mm 1fr;gap:7mm;align-items:center;padding-bottom:5.5mm;margin-bottom:5.5mm;border-bottom:.6pt solid var(--line)}
+.case .img{border-radius:2.5mm;overflow:hidden;aspect-ratio:3/2;background:#e8e1d3}
+.case .img img{width:100%;height:100%;object-fit:cover}
+.case .no{font:500 7.4pt var(--mono);color:var(--gold)}
+.case h3{font-size:13pt;margin:1mm 0 1.4mm}
+.case .sum{font-size:8.6pt;color:var(--mute);line-height:1.55}
+.meta{margin-top:2mm;font-size:7.9pt}
+.meta div{display:grid;grid-template-columns:9mm 1fr;gap:2mm;padding:.8mm 0;border-top:.6pt solid var(--line)}
+.meta dt{font:500 6.8pt/1.9 var(--mono);color:var(--mute)}
+.kpi{display:flex;flex-wrap:wrap;gap:1.2mm 4mm;margin-top:1.4mm}
+.kpi span{font-size:7.4pt;color:var(--mute)}.kpi b{font:500 7.6pt var(--mono);color:var(--gold);margin-left:1mm}
+.now{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm}
+.now>div{border:.6pt solid var(--line);border-radius:2.5mm;padding:2.6mm;margin-bottom:6mm}
+.now .img{border-radius:1.5mm;overflow:hidden;aspect-ratio:5/2;margin-bottom:2.2mm;background:#e8e1d3}
+.now .img img{width:100%;height:100%;object-fit:cover;object-position:top}
+.now .img.lock{display:grid;place-items:center;font:500 7.4pt var(--mono);color:var(--mute);letter-spacing:.12em}
+.now h3{font-size:9.6pt;margin:1mm 0}.now p{font-size:7.6pt;color:var(--mute);line-height:1.5}
+.ft{margin-top:auto;margin-bottom:5mm;display:grid;grid-template-columns:1fr 22mm;gap:6mm;align-items:center;padding-top:4mm;border-top:1.2pt solid var(--ink)}
+.ft h3{font-size:12pt;margin:1.5mm 0 .8mm}.ft p{font-size:8pt;color:var(--mute)}
+.ft .url{font:500 8.6pt var(--mono);color:var(--ink)}
+.qr{width:22mm;height:22mm}
+</style>
+</head>
+<body>
+<svg style="display:none"><symbol id="orn" viewBox="0 0 400 400" fill="none" stroke="currentColor"><circle cx="200" cy="200" r="190" stroke-width=".8"/><circle cx="200" cy="200" r="182" stroke-width="6" stroke-dasharray="1 14.88"/><circle cx="200" cy="200" r="150" stroke-width=".6"/><circle cx="200" cy="200" r="110" stroke-width=".6" stroke-dasharray="2 6"/></symbol></svg>
+
+<!-- PAGE 1 · RESUME -->
+<section class="page">
+  <svg class="orn"><use href="#orn"/></svg>
+  <header class="hd">
+    <div>
+      <p class="label">Brand Visual Designer · Art Manager</p>
+      <h1>薛翊均<em>Winnie Hsueh</em></h1>
+      <p class="role">資深品牌視覺設計師 · 美術專案管理</p>
+      <p class="lead">橫跨遊戲、品牌 IP 與數位產品，從視覺設計、UI/UX 到周邊開發與團隊管理，把創意落實成可量產、可上線的成果。</p>
+    </div>
+    <div>
+      <div class="ph"><img src="images/portfolio/me.jpg" alt=""></div>
+      <dl class="ct">
+        <div><dt>EMAIL</dt><dd><a href="mailto:winnietoto@gmail.com">winnietoto@gmail.com</a></dd></div>
+        <div><dt>WEB</dt><dd><a href="https://xuexue-ni.github.io/portfolio/">xuexue-ni.github.io/portfolio</a></dd></div>
+        <div><dt>BASED</dt><dd>新北市汐止區</dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <div class="cols">
+    <aside>
+      <div class="blk"><span class="label">Profile</span>
+        <p class="quote">設計出身，擅長把品牌想法變成能落地的視覺與產品。</p>
+        <p style="margin-top:2.5mm;color:var(--mute);font-size:8.3pt">經歷涵蓋平面、網頁、UI/UX、包裝與商業攝影。近年以管理為主，負責流程優化、設計品質把關與跨部門溝通，讓團隊穩定產出。</p>
+      </div>
+      <div class="blk caps"><span class="label">Capabilities</span>
+        <div><h4>品牌視覺設計</h4><p>品牌識別、產品與包裝、插畫、手工藝品造型、展示設計</p></div>
+        <div><h4>行銷企劃</h4><p>行銷策略與廣告分析、廣告素材、異業合作、線下活動</p></div>
+        <div><h4>網頁與 UI/UX</h4><p>資訊架構、線框與原型、響應式網頁、測試調整</p></div>
+        <div><h4>團隊管理</h4><p>流程優化、專案整合、品質控管、AI 應用導入</p></div>
+        <div><h4>商業攝影 · 形象造型</h4><p>創意指導、產品攝影、後製；代言人形象與妝髮造型</p></div>
+      </div>
+      <div class="blk"><span class="label">Tools</span>
+        <div class="tags"><span>Photoshop</span><span>Illustrator</span><span>Web / RWD</span><span>前端原型</span><span>AI 工作流程</span><span>插畫</span></div>
+      </div>
+    </aside>
+
+    <div>
+      <div class="blk"><span class="label">Experience</span>
+        <ol class="tl">
+          <li><time>2022 – 2024</time><div><h3>芬格國際有限公司<small>副理</small></h3><p>部門管理與專案整合、推行設計優化與 AI 應用、IP 品牌管理與行銷計畫執行、業務合作。</p></div></li>
+          <li><time>2019 – 2021</time><div><h3>樂榮科技<small>UI/UX 設計師</small></h3><p>UI/UX 規劃與設計、2D 元件、網頁版型、廣告設計；參與 10 餘款遊戲專案。</p></div></li>
+          <li><time>2017 – 2018</time><div><h3>奇游科技<small>高級設計師</small></h3><p>部門管理與跨部門協調、設計規劃與執行、行銷策略與廣告分析。</p></div></li>
+          <li><time>2015 – 2017</time><div><h3>酷玩科技<small>美術經理</small></h3><p>部門管理與跨部門協調、設計規劃與執行。</p></div></li>
+          <li><time>2013 – 2015</time><div><h3>紅心辣椒<small>美術設計</small></h3></div></li>
+          <li><time>2011 – 2013</time><div><h3>全球華人<small>網站設計</small></h3></div></li>
+          <li><time>2008 – 2011</time><div><h3>信義房屋<small>美術設計</small></h3><p>吉祥物「阿義」IP 周邊開發、輔銷文宣與櫥窗展示。</p></div></li>
+        </ol>
+      </div>
+      <div class="blk"><span class="label">Education</span>
+        <ol class="tl">
+          <li><time>2002 – 2006</time><div><h3>國立台灣藝術大學<small>視覺傳達設計系 學士</small></h3><p>系學會活動長</p></div></li>
+          <li><time>1997 – 2000</time><div><h3>私立復興商工<small>廣告設計科</small></h3><p>畢業展多媒體類第一名，代表至國父紀念館參展</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="sh nowh"><div><p class="label">Now</p><h2>近期專案 · LIFE+</h2></div><p>結合品牌美學、前端原型與演算邏輯的個人數位產品</p></div>
+  <div class="now">
+    <div><div class="img"><img src="images/portfolio/lm_hero.jpg" alt=""></div><span class="label">Digital Memorial</span><h3>LIFE+ Legacy Matrix</h3><p>人生策展品牌與記憶數位紀錄系統，整合玄學設計元素的美學演算引擎。</p></div>
+    <div><div class="img lock">◎ 尚未公開</div><span class="label">Healing Game</span><h3>微光漫遊 Luma Wander</h3><p>原創療癒遊戲，故事、世界觀、視覺到互動流程皆由我設計，MVP 開發中。</p></div>
+    <div><div class="img"><img src="images/portfolio/tietie_web.jpg" alt=""></div><span class="label">LINE Sticker</span><h3>貼貼 #SparkleTag</h3><p>照片變專屬 LINE 貼圖的服務品牌，延伸客製實體周邊與 IP 角色。</p></div>
+  </div>
+
+  <span class="pno">WINNIE HSUEH · CV · 01 / 02</span>
+</section>
+
+<!-- PAGE 2 · SELECTED WORK -->
+<section class="page">
+  <div class="sh"><div><p class="label">Selected Work</p><h2>精選案例</h2></div><p>完整作品請見網頁版作品集</p></div>
+
+  <article class="case">
+    <div class="img"><img src="images/portfolio/brand02.jpg" alt=""></div>
+    <div>
+      <span class="no">01 — 品牌 IP</span>
+      <h3>信義房屋「阿義」IP 與輔銷系統</h3>
+      <p class="sum">吉祥物「阿義」周邊開發與管理，延伸到門市輔銷物、文宣與櫥窗展示。獨立開發實體周邊 30+ 款，含成本與庫存管理。</p>
+      <dl class="meta"><div><dt>角色</dt><dd>周邊設計與開發管理</dd></div></dl>
+      <div class="kpi"><span>新品開發率<b>200%+</b></span><span>成本平均降低<b>40%+</b></span><span>復購率<b>200%+</b></span></div>
+    </div>
+  </article>
+
+  <article class="case">
+    <div class="img"><img src="images/portfolio/slot01.jpg" alt=""></div>
+    <div>
+      <span class="no">02 — UI/UX</span>
+      <h3>遊戲介面與場景設計</h3>
+      <p class="sum">多款手遊與網頁遊戲的 UI/UX 規劃、2D 元件與場景設計，涵蓋老虎機、賓果、遊戲平台等類型。</p>
+      <dl class="meta"><div><dt>角色</dt><dd>UI/UX 設計師（樂榮科技）</dd></div><div><dt>規模</dt><dd>參與 10 餘款遊戲專案</dd></div></dl>
+    </div>
+  </article>
+
+  <article class="case">
+    <div class="img"><img src="images/portfolio/web02.jpg" alt=""></div>
+    <div>
+      <span class="no">03 — 行銷視覺</span>
+      <h3>遊戲主視覺與多市場廣告</h3>
+      <p class="sum">20+ 款遊戲的主視覺、活動頁、事前登錄互動與廣告素材，依市場切換韓風、中式、歐美視覺語言。</p>
+      <dl class="meta"><div><dt>角色</dt><dd>美術經理 · 高級設計師</dd></div></dl>
+      <div class="kpi"><span>英雄序章 CTR<b>2.5–4.0%</b></span><span>CVR<b>25–30%</b></span><span>首週 ROAS<b>120–150%</b></span><span>K-factor<b>0.6–0.8</b></span></div>
+    </div>
+  </article>
+
+  <footer class="ft">
+    <div><p class="label">Full Portfolio</p><h3>更多作品與案例細節</h3><p>掃描 QR code 或前往 <a class="url" href="https://xuexue-ni.github.io/portfolio/">xuexue-ni.github.io/portfolio</a></p></div>
+    <a class="qr" href="https://xuexue-ni.github.io/portfolio/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 116" width="100%" height="100%" class="segno"><path transform="scale(4)" class="qrline" stroke="#1a1814" d="M0 0.5h7m1 0h1m1 0h1m1 0h1m1 0h3m5 0h7m-29 1h1m5 0h1m9 0h1m2 0h2m1 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m3 0h2m2 0h5m3 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m1 0h4m2 0h1m1 0h2m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m2 0h1m2 0h3m1 0h1m3 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m1 0h3m1 0h1m4 0h4m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h1m2 0h2m1 0h2m1 0h1m2 0h1m-21 1h1m3 0h1m1 0h5m1 0h4m1 0h3m1 0h5m2 0h1m-29 1h2m1 0h1m1 0h1m2 0h2m1 0h8m2 0h8m-29 1h1m1 0h2m1 0h3m2 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h2m4 0h1m-29 1h1m7 0h1m1 0h1m6 0h1m4 0h4m1 0h2m-29 1h2m1 0h2m1 0h1m3 0h1m1 0h4m1 0h1m2 0h2m1 0h1m3 0h1m-28 1h1m1 0h1m1 0h2m1 0h2m3 0h1m1 0h5m3 0h7m-29 1h2m1 0h2m1 0h2m2 0h1m1 0h6m2 0h1m1 0h1m2 0h2m1 0h1m-29 1h1m1 0h1m1 0h2m2 0h4m1 0h1m3 0h4m1 0h1m4 0h2m-29 1h2m1 0h1m1 0h3m4 0h2m3 0h1m1 0h2m6 0h1m-28 1h2m1 0h1m3 0h1m3 0h8m3 0h4m1 0h2m-27 1h1m3 0h4m1 0h1m3 0h2m1 0h1m7 0h1m1 0h1m-27 1h1m1 0h2m1 0h2m1 0h3m1 0h2m1 0h4m1 0h1m4 0h2m-29 1h3m1 0h3m2 0h1m3 0h2m1 0h3m1 0h6m2 0h1m-21 1h2m2 0h1m2 0h6m3 0h1m3 0h1m-29 1h7m1 0h1m2 0h6m1 0h3m1 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m3 0h1m2 0h1m2 0h3m1 0h1m3 0h1m2 0h1m-28 1h1m1 0h3m1 0h1m1 0h2m2 0h2m2 0h2m1 0h7m1 0h1m-28 1h1m1 0h3m1 0h1m3 0h1m3 0h3m3 0h2m1 0h1m4 0h1m-29 1h1m1 0h3m1 0h1m3 0h2m3 0h1m1 0h1m2 0h2m3 0h4m-29 1h1m5 0h1m3 0h2m2 0h1m2 0h1m2 0h1m2 0h1m1 0h1m1 0h2m-29 1h7m1 0h2m3 0h1m1 0h1m1 0h1m2 0h1m1 0h1m4 0h1"/></svg>
+</a>
+  </footer>
+  <span class="pno">WINNIE HSUEH · CV · 02 / 02</span>
+</section>
+</body>
+</html>
