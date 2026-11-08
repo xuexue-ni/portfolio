@@ -21,6 +21,10 @@ a{color:inherit;text-decoration:none}
 h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.25}
 .orn{position:absolute;top:-30mm;right:-30mm;width:100mm;height:100mm;color:var(--gold);opacity:.35;pointer-events:none}
 .pno{position:absolute;bottom:5mm;right:15mm;font:500 7pt var(--mono);color:var(--mute);letter-spacing:.12em}
+.hasic{display:flex!important;align-items:center;gap:2mm}
+.ic{display:inline-grid;place-items:center;width:5mm;height:5mm;border:.6pt solid var(--gold);border-radius:50%;flex:none}
+.ic svg{width:2.9mm;height:2.9mm}
+.sh .hasic{margin-bottom:.4mm}
 /* header */
 .hd{position:relative;z-index:1;display:grid;grid-template-columns:1fr 60mm;gap:8mm;align-items:end;padding-bottom:6mm;border-bottom:1.2pt solid var(--ink)}
 .hd h1{font-size:30pt;margin:3mm 0 1mm}.hd h1 em{font-style:normal;color:var(--gold);font-size:.62em;margin-left:2mm}
@@ -32,10 +36,10 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.25}
 .ph{width:24mm;height:24mm;border-radius:50%;overflow:hidden;margin-bottom:3mm;border:.8pt solid var(--line)}
 .ph img{width:100%;height:100%;object-fit:cover;object-position:52% 30%}
 /* body */
-.cols{display:grid;grid-template-columns:62mm 1fr;gap:9mm;margin:5mm 0 7mm}
+.cols{display:grid;grid-template-columns:62mm 1fr;gap:9mm;margin:4.5mm 0 4mm}
 .nowh{margin-top:auto;margin-bottom:3mm;padding-bottom:2mm}.nowh h2{font-size:13pt}
-.blk+.blk{margin-top:5mm}
-.blk>.label{display:block;padding-bottom:2mm;margin-bottom:3mm;border-bottom:.6pt solid var(--line)}
+.blk+.blk{margin-top:4.4mm}
+.blk>.label{display:block;padding-bottom:1.4mm;margin-bottom:2.6mm;border-bottom:.6pt solid var(--line)}
 .caps div+div{margin-top:2mm}
 .caps h4{font:700 9pt var(--sans)}
 .caps p{color:var(--mute);font-size:8.2pt;line-height:1.5}
@@ -99,24 +103,24 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.25}
 
   <div class="cols">
     <aside>
-      <div class="blk"><span class="label">Profile</span>
+      <div class="blk"><span class="label hasic"><i class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c1.2-4 4-5.6 7-5.6s5.8 1.6 7 5.6"/></svg></i>Profile</span>
         <p class="quote">設計出身，擅長把品牌想法變成能落地的視覺與產品。</p>
         <p style="margin-top:2.5mm;color:var(--mute);font-size:8.3pt">經歷涵蓋平面、網頁、UI/UX、包裝與商業攝影。近年以管理為主，負責流程優化、設計品質把關與跨部門溝通，讓團隊穩定產出。</p>
       </div>
-      <div class="blk caps"><span class="label">Capabilities</span>
+      <div class="blk caps"><span class="label hasic"><i class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4z"/></svg></i>Capabilities</span>
         <div><h4>品牌視覺設計</h4><p>品牌識別、產品與包裝、插畫、手工藝品造型、展示設計</p></div>
         <div><h4>行銷企劃</h4><p>行銷策略與廣告分析、廣告素材、異業合作、線下活動</p></div>
         <div><h4>網頁與 UI/UX</h4><p>資訊架構、線框與原型、響應式網頁、測試調整</p></div>
         <div><h4>團隊管理</h4><p>流程優化、專案整合、品質控管、AI 應用導入</p></div>
         <div><h4>商業攝影 · 形象造型</h4><p>創意指導、產品攝影、後製；代言人形象與妝髮造型</p></div>
       </div>
-      <div class="blk"><span class="label">Tools</span>
+      <div class="blk"><span class="label hasic"><i class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l9-9"/><path d="M14 4l6 6-3 3-6-6z"/><path d="M4 20l2.5-.5L5 18z"/></svg></i>Tools</span>
         <div class="tags"><span>Photoshop</span><span>Illustrator</span><span>Web / RWD</span><span>前端原型</span><span>AI 工作流程</span><span>插畫</span></div>
       </div>
     </aside>
 
     <div>
-      <div class="blk"><span class="label">Experience</span>
+      <div class="blk"><span class="label hasic"><i class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="7" width="17" height="12" rx="2"/><path d="M9 7V5h6v2M3.5 12h17"/></svg></i>Experience</span>
         <ol class="tl">
           <li><time>2022 – 2024</time><div><h3>芬格國際有限公司<small>副理</small></h3><p>部門管理與專案整合、推行設計優化與 AI 應用、IP 品牌管理與行銷計畫執行、業務合作。</p></div></li>
           <li><time>2019 – 2021</time><div><h3>樂榮科技<small>UI/UX 設計師</small></h3><p>UI/UX 規劃與設計、2D 元件、網頁版型、廣告設計；參與 10 餘款遊戲專案。</p></div></li>
@@ -127,7 +131,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.25}
           <li><time>2008 – 2011</time><div><h3>信義房屋<small>美術設計</small></h3><p>吉祥物「阿義」IP 周邊開發、輔銷文宣與櫥窗展示。</p></div></li>
         </ol>
       </div>
-      <div class="blk"><span class="label">Education</span>
+      <div class="blk"><span class="label hasic"><i class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9.5L12 5l9.5 4.5L12 14z"/><path d="M6.5 11.5V16c3 2.4 8 2.4 11 0v-4.5M21.5 9.5v5"/></svg></i>Education</span>
         <ol class="tl">
           <li><time>2002 – 2006</time><div><h3>國立台灣藝術大學<small>視覺傳達設計系 學士</small></h3><p>系學會活動長</p></div></li>
           <li><time>1997 – 2000</time><div><h3>私立復興商工<small>廣告設計科</small></h3><p>畢業展多媒體類第一名，代表至國父紀念館參展</p></div></li>
@@ -135,7 +139,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.25}
       </div>
     </div>
   </div>
-  <div class="sh nowh"><div><p class="label">Now</p><h2>近期專案 · LIFE+</h2></div><p>結合品牌美學、前端原型與演算邏輯的個人數位產品</p></div>
+  <div class="sh nowh"><div><p class="label hasic"><i class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></svg></i>Now</p><h2>近期專案 · LIFE+</h2></div><p>結合品牌美學、前端原型與演算邏輯的個人數位產品</p></div>
   <div class="now">
     <div><div class="img"><img src="images/portfolio/lm_hero.jpg" alt=""></div><span class="label">Digital Memorial</span><h3>LIFE+ Legacy Matrix</h3><p>人生策展品牌與記憶數位紀錄系統，整合玄學設計元素的美學演算引擎。</p></div>
     <div><div class="img lock">◎ 尚未公開</div><span class="label">Healing Game</span><h3>微光漫遊 Luma Wander</h3><p>原創療癒遊戲，故事、世界觀、視覺到互動流程皆由我設計，MVP 開發中。</p></div>
@@ -147,7 +151,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.25}
 
 <!-- PAGE 2 · SELECTED WORK -->
 <section class="page">
-  <div class="sh"><div><p class="label">Selected Work</p><h2>精選案例</h2></div><p>完整作品請見網頁版作品集</p></div>
+  <div class="sh"><div><p class="label hasic"><i class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="1"/><rect x="13.5" y="3.5" width="7" height="7" rx="1"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><circle cx="17" cy="17" r="3.5"/></svg></i>Selected Work</p><h2>精選案例</h2></div><p>完整作品請見網頁版作品集</p></div>
 
   <article class="case">
     <div class="img"><img src="images/portfolio/brand02.jpg" alt=""></div>
@@ -166,7 +170,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.25}
       <span class="no">02 — UI/UX</span>
       <h3>遊戲介面與場景設計</h3>
       <p class="sum">多款手遊與網頁遊戲的 UI/UX 規劃、2D 元件與場景設計，涵蓋老虎機、賓果、遊戲平台等類型。</p>
-      <dl class="meta"><div><dt>角色</dt><dd>UI/UX 設計師（樂榮科技）</dd></div><div><dt>規模</dt><dd>參與 10 餘款遊戲專案</dd></div></dl>
+      <dl class="meta"><div><dt>角色</dt><dd>UI/UX 設計師</dd></div><div><dt>規模</dt><dd>參與 10 餘款遊戲專案</dd></div></dl>
     </div>
   </article>
 
@@ -182,7 +186,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.25}
   </article>
 
   <footer class="ft">
-    <div><p class="label">Full Portfolio</p><h3>更多作品與案例細節</h3><p>掃描 QR code 或前往 <a class="url" href="https://xuexue-ni.github.io/portfolio/">xuexue-ni.github.io/portfolio</a></p></div>
+    <div><p class="label hasic"><i class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></i>Full Portfolio</p><h3>更多作品與案例細節</h3><p>掃描 QR code 或前往 <a class="url" href="https://xuexue-ni.github.io/portfolio/">xuexue-ni.github.io/portfolio</a></p></div>
     <a class="qr" href="https://xuexue-ni.github.io/portfolio/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 116" width="100%" height="100%" class="segno"><path transform="scale(4)" class="qrline" stroke="#1a1814" d="M0 0.5h7m1 0h1m1 0h1m1 0h1m1 0h3m5 0h7m-29 1h1m5 0h1m9 0h1m2 0h2m1 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m3 0h2m2 0h5m3 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m1 0h4m2 0h1m1 0h2m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m2 0h1m2 0h3m1 0h1m3 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m1 0h3m1 0h1m4 0h4m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h1m2 0h2m1 0h2m1 0h1m2 0h1m-21 1h1m3 0h1m1 0h5m1 0h4m1 0h3m1 0h5m2 0h1m-29 1h2m1 0h1m1 0h1m2 0h2m1 0h8m2 0h8m-29 1h1m1 0h2m1 0h3m2 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h2m4 0h1m-29 1h1m7 0h1m1 0h1m6 0h1m4 0h4m1 0h2m-29 1h2m1 0h2m1 0h1m3 0h1m1 0h4m1 0h1m2 0h2m1 0h1m3 0h1m-28 1h1m1 0h1m1 0h2m1 0h2m3 0h1m1 0h5m3 0h7m-29 1h2m1 0h2m1 0h2m2 0h1m1 0h6m2 0h1m1 0h1m2 0h2m1 0h1m-29 1h1m1 0h1m1 0h2m2 0h4m1 0h1m3 0h4m1 0h1m4 0h2m-29 1h2m1 0h1m1 0h3m4 0h2m3 0h1m1 0h2m6 0h1m-28 1h2m1 0h1m3 0h1m3 0h8m3 0h4m1 0h2m-27 1h1m3 0h4m1 0h1m3 0h2m1 0h1m7 0h1m1 0h1m-27 1h1m1 0h2m1 0h2m1 0h3m1 0h2m1 0h4m1 0h1m4 0h2m-29 1h3m1 0h3m2 0h1m3 0h2m1 0h3m1 0h6m2 0h1m-21 1h2m2 0h1m2 0h6m3 0h1m3 0h1m-29 1h7m1 0h1m2 0h6m1 0h3m1 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m3 0h1m2 0h1m2 0h3m1 0h1m3 0h1m2 0h1m-28 1h1m1 0h3m1 0h1m1 0h2m2 0h2m2 0h2m1 0h7m1 0h1m-28 1h1m1 0h3m1 0h1m3 0h1m3 0h3m3 0h2m1 0h1m4 0h1m-29 1h1m1 0h3m1 0h1m3 0h2m3 0h1m1 0h1m2 0h2m3 0h4m-29 1h1m5 0h1m3 0h2m2 0h1m2 0h1m2 0h1m2 0h1m1 0h1m1 0h2m-29 1h7m1 0h2m3 0h1m1 0h1m1 0h1m2 0h1m1 0h1m4 0h1"/></svg>
 </a>
   </footer>
