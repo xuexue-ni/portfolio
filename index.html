@@ -265,7 +265,7 @@ footer .wrap{display:flex;justify-content:space-between}
 }
 @media (max-width:520px){.caps{grid-template-columns:1fr}.thumbs{columns:2}}
 </style>
-<script>try{const t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<script>try{document.documentElement.dataset.theme='gm';const t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
 
@@ -281,7 +281,6 @@ footer .wrap{display:flex;justify-content:space-between}
     </ul>
     <div class="nav-r">
       <div class="theme" role="group" aria-label="配色">
-        <button data-t="" title="黑金" style="--a:#0b0b0a;--b:#c9a96e"></button>
         <button data-t="ivory" title="象牙紙感" style="--a:#f5f0e6;--b:#9a7438"></button>
         <button data-t="gm" title="黑金多彩" style="--a:#0b0b0a;--b:#7fa3c9"></button>
         <button data-t="pop" title="多彩深色" style="--a:#14112b;--b:#ff6fb5"></button>
@@ -710,7 +709,7 @@ const io='IntersectionObserver' in window?new IntersectionObserver(es=>es.forEac
 document.querySelectorAll('.reveal').forEach(el=>io?io.observe(el):el.classList.add('in'));
 </script>
 <script>(()=>{const r=document.documentElement,bs=document.querySelectorAll('.theme button');
-const set=t=>{t?r.dataset.theme=t:delete r.dataset.theme;bs.forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===t));try{localStorage.setItem('theme',t)}catch(e){}};
+const set=t=>{t=t||'gm';r.dataset.theme=t;bs.forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===t));try{localStorage.setItem('theme',t)}catch(e){}};
 bs.forEach(b=>b.onclick=()=>set(b.dataset.t));set(r.dataset.theme||'')})();</script>
 </body>
 </html>
