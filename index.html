@@ -52,6 +52,9 @@ section{padding:112px 0;border-top:1px solid var(--line)}
 .lang{font:500 12px var(--mono);border:1px solid var(--line);padding:6px 10px;border-radius:2px;color:var(--mute)}
 .lang:hover{border-color:var(--gold);color:var(--gold)}
 .nav-r{display:flex;align-items:center;gap:14px}
+.menu-btn{display:none;width:32px;height:32px;background:none;border:1px solid var(--line);border-radius:2px;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:4px}
+.menu-btn i{display:block;width:14px;height:1.5px;background:var(--ink);transition:transform .25s,opacity .25s}
+.nav.open .menu-btn i:nth-child(1){transform:translateY(5.5px) rotate(45deg)}.nav.open .menu-btn i:nth-child(2){opacity:0}.nav.open .menu-btn i:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
 .theme{display:flex;gap:6px}
 .theme button{width:16px;height:16px;border-radius:50%;border:1px solid var(--line);cursor:pointer;background:linear-gradient(135deg,var(--a) 50%,var(--b) 50%);transition:transform .2s}
 .theme button:hover{transform:scale(1.15)}.theme button[aria-pressed="true"]{box-shadow:0 0 0 2px var(--bg),0 0 0 3px var(--gold)}
@@ -251,7 +254,10 @@ footer .wrap{display:flex;justify-content:space-between}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
 
 @media (max-width:900px){
-  .nav ul{display:none}
+  .nav ul{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 24px 16px}
+  .nav.open ul{display:flex}
+  .nav ul a{display:block;padding:14px 0;border-bottom:1px solid var(--line);font-size:16px;color:var(--ink)}
+  .menu-btn{display:flex}
   .about,.now-grid{grid-template-columns:1fr;gap:28px}
   .case>*{grid-column:1/-1!important;grid-row:auto!important}
   .case>div:last-child{position:static}
@@ -289,6 +295,7 @@ footer .wrap{display:flex;justify-content:space-between}
         <button data-t="pop" title="多彩深色" style="--a:#2a3a9c;--b:#ff6fb5"></button>
       </div>
       <a class="lang" id="langBtn" href="?lang=en" lang="en">EN</a>
+      <button class="menu-btn" id="menuBtn" aria-label="選單" aria-expanded="false"><i></i><i></i><i></i></button>
     </div>
   </div>
 </nav>
@@ -701,6 +708,10 @@ addEventListener('keydown',e=>{if(!sel||!e.key.startsWith('Arrow'))return;e.prev
 draw();};
 if(/edit/.test(location.search+location.hash))edStart();
 {let kb='';addEventListener('keydown',e=>{if(e.key.length!==1)return;kb=(kb+e.key.toLowerCase()).slice(-4);if(kb==='edit')edStart();});}
+// mobile menu
+(()=>{const n=document.querySelector('.nav'),b=document.getElementById('menuBtn');
+  b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  n.querySelectorAll('ul a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded',false)}))})();
 // hero parallax
 const col=document.querySelector('.collage');
 if(col&&matchMedia('(hover:hover) and (prefers-reduced-motion:no-preference)').matches){
