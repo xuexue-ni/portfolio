@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /cv.html
+Sitemap: https://xuexue-ni.github.io/portfolio/sitemap.xml
